@@ -9,7 +9,7 @@ namespace KataFindUppercase
         [Test]
         public void Test1()
         {
-            Assert.AreEqual(new List<int>(){0}, KataFindUppercase.execute("Hello"));
+            Assert.AreEqual(new List<int>(){0}, KataFindUppercase.Execute("Hello"));
         }
     }
 }
