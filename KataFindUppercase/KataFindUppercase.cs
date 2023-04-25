@@ -1,10 +1,13 @@
+using System.Collections.Generic;
+using NUnit.Framework;
+
 namespace KataFindUppercase
 {
     public class KataFindUppercase
     {
-        public static string execute(string text)
+        public static List<int> execute(string text)
         {
-            return text;
+            return new List<int>(){0};
         }
     }
 }

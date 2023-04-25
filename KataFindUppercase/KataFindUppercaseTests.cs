@@ -1,4 +1,5 @@
-﻿using NUnit.Framework;
+﻿using System.Collections.Generic;
+using NUnit.Framework;
 
 namespace KataFindUppercase
 {
@@ -8,7 +9,7 @@ namespace KataFindUppercase
         [Test]
         public void Test1()
         {
-            Assert.AreEqual(KataFindUppercase.execute("Hello"), "Hello");
+            Assert.AreEqual(new List<int>(){0}, KataFindUppercase.execute("Hello"));
         }
     }
 }
