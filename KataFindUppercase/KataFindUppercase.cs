@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 
 namespace KataFindUppercase
@@ -6,7 +7,16 @@ namespace KataFindUppercase
     {
         public static List<int> Execute(string text)
         {
-            return new List<int>(){0};
+            List<int> indexes = new List<int>();
+            for (int i = 0; i < text.Length; i++)
+            {
+                if (Char.IsUpper(text[i]))
+                {
+                    indexes.Add(i);
+                }
+            }
+
+            return indexes;
         }
     }
 }
