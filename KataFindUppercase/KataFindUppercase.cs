@@ -5,17 +5,17 @@ namespace KataFindUppercase
 {
     public class KataFindUppercase
     {
-        public static List<int> Execute(string text)
+        public static List<int> Execute(string text, List<int> indexes, int index)
         {
-            List<int> indexes = new List<int>();
-            for (int i = 0; i < text.Length; i++)
+            var totalIndexes = text.Length - 1;
+            if (totalIndexes > index)
             {
-                if (Char.IsUpper(text[i]))
+                if (Char.IsUpper(text[index]))
                 {
-                    indexes.Add(i);
+                    indexes.Add(index);
                 }
+                return Execute(text, indexes, ++index);
             }
-
             return indexes;
         }
     }
